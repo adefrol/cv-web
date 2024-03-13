@@ -1,6 +1,6 @@
-import { FC, useState } from "react";
-import { PageTitle } from "../PageTitle";
 import { cn } from "@/lib/utils";
+import { FC } from "react";
+import { PageTitle } from "../PageTitle";
 import { ScrollArea, ScrollBar } from "../ui/scroll-area";
 
 const sidebar = [
