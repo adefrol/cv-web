@@ -3,8 +3,8 @@ import { MoveUpRight } from "lucide-react";
 import { FC } from "react";
 import tg from "../assets/tg.svg";
 import vk from "../assets/vk.svg";
-import { FormComponent } from "./contacts/form/FormComponent";
 import { SocialIcon } from "./contacts/SocialIcon";
+import { FormComponent } from "./contacts/form/FormComponent";
 import { Button } from "./ui/button";
 import {
   Drawer,
