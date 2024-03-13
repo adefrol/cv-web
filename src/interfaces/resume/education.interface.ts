@@ -1,5 +1,8 @@
 export interface IEducation {
   id: number;
-  title: string;
-  body?: string;
+  educationType: string;
+  educationPlace: string;
+  profession: string;
+
+  dateTime: string;
 }
