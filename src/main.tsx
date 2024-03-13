@@ -8,6 +8,7 @@ import { routeTree } from "./routeTree.gen";
 // Import Tailwindcss
 import "./index.css";
 import { SwitchUserContextProvider } from "./context/SwitchUserContext";
+import { Toaster } from "./components/ui/sonner";
 
 // Create a new router instance
 const router = createRouter({ routeTree });
@@ -28,6 +29,7 @@ if (!rootElement.innerHTML) {
       <SwitchUserContextProvider>
         <RouterProvider router={router} />
       </SwitchUserContextProvider>
+      <Toaster />
     </StrictMode>
   );
 }
