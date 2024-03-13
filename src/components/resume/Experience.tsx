@@ -14,7 +14,7 @@ export const Experience: FC<{ user: IUser }> = ({ user }) => {
                 {exp.title}
               </p>
 
-              <p className="max-w-[800px] max-[639px]:max-w-[300px]">{exp.body}</p>
+              <p className="max-w-[800px] max-[639px]:max-w-[300px]" dangerouslySetInnerHTML={{ __html: exp.body }}></p>
             </div>
           ))}
         </div>
