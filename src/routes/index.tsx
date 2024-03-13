@@ -13,7 +13,7 @@ const Home = () => {
   return (
     <div className="">
       <div className="flex flex-col gap-[20px]">
-        <PageTitle title="Привет!" />
+        <PageTitle title="Главная" />
 
         <p className="max-w-[600px] font-semibold text-[24px]">
           {user?.resume.map((item) => <p>{item.title}</p>)}
