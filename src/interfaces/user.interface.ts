@@ -7,6 +7,7 @@ export interface IUser {
   lastname: string;
   patronymic: string;
   img: string;
+  alt: string;
   resume: IResume[];
   contact: IContact[];
 }

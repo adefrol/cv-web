@@ -9,7 +9,8 @@ export interface IUserState {
 
 const defaultState = {
   user: users[0] || null,
-  switchUser: (id: number) => {},
+  // Не используемый id, не 
+  switchUser: (/* id: number */) => {},
 };
 
 const SwitchUserContext = createContext<IUserState>(defaultState);

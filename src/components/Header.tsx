@@ -48,10 +48,10 @@ export const Header: FC<IProps> = ({}) => {
 
   return (
     <div className="flex items-center justify-between max-[639px]:flex-col max-[639px]:gap-[30px]">
-      <div className="flex items-center gap-[30px] max-[639px]:gap-[50px]">
+      <div className="flex items-center gap-[30px] h-[75px] max-[639px]:gap-[50px]">
         {logo ? (
           <div className="">
-            <p className="text-3xl">LOGO</p>
+            <p className="text-3xl logo-varela select-none">illumed<span className='text-[#7266e2]'>Web</span></p>
           </div>
         ) : (
           <>
@@ -65,7 +65,7 @@ export const Header: FC<IProps> = ({}) => {
                 })}
               >
                 <Avatar className="cursor-pointer w-[50px] h-[50px] max-[639px]:w-[60px] max-[639px]:h-[60px]">
-                  <AvatarImage src={user.img} />
+                  <AvatarImage src={user.img} alt={user.alt}  />
                   <AvatarFallback>{user.name}</AvatarFallback>
                 </Avatar>
 

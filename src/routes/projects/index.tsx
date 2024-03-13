@@ -1,6 +1,6 @@
 import { PageTitle } from "@/components/PageTitle";
-import { IMAGE_URL } from "@/constants/images";
-import { projects } from "@/lib/projects";
+/* import { IMAGE_URL } from "@/constants/images";
+ */import { projects } from "@/lib/projects";
 import { Link, createFileRoute } from "@tanstack/react-router";
 import { MoveUpRight } from "lucide-react";
 
@@ -27,6 +27,7 @@ const Projects = () => {
                   <img
                     src={project.img}
                     className="w-[350px] h-[200px] max-[639px]:h-full max-[639px]:w-full"
+                    alt={project.alt}
                   />
 
                   <p className="text-black/50 font-semibold">

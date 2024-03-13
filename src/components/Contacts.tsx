@@ -34,11 +34,11 @@ export const Contacts: FC = () => {
         >
           <div className="mx-auto w-full max-w-sm">
             <DrawerHeader className="mt-[10px]">
-              <DrawerTitle className="text-center text-3xl">
+              <DrawerTitle className="text-center">
                 Связаться с нами
               </DrawerTitle>
 
-              <DrawerDescription className="text-center font-semibold">
+              <DrawerDescription className="text-center font-light text-black">
                 Выберите один из способов связи
               </DrawerDescription>
             </DrawerHeader>
@@ -47,9 +47,9 @@ export const Contacts: FC = () => {
               <FormComponent />
 
               <div className="flex justify-center items-center gap-2">
-                <div className="w-full h-[0.5px] bg-black/50" />
-                <p className="uppercase text-center text-black/50">или</p>
-                <div className="w-full h-[0.5px] bg-black/50" />
+                <div className="w-full h-[0.5px] bg-black" />
+                <p className="uppercase text-center text-black font-light">или</p>
+                <div className="w-full h-[0.5px] bg-black" />
               </div>
 
               <div className="flex items-center justify-center">

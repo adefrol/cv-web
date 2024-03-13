@@ -7,7 +7,7 @@ export const users: IUser[] = [
     lastname: "Найдёнов",
     patronymic: "Сергеевич",
     img: "https://github.com/3N.png",
-
+    alt: "alexandr",
     resume: [
       {
         id: 1,
@@ -157,7 +157,7 @@ export const users: IUser[] = [
     lastname: "Курбатов",
     patronymic: "Викторович",
     img: "https://picsum.photos/200",
-
+    alt: "ivan",
     resume: [
       {
         id: 1,
@@ -176,9 +176,14 @@ export const users: IUser[] = [
         education: [
           {
             id: 1,
-            title: "Title Ivan",
+            educationType: "Среднее специальное",
+            educationPlace: "Иркутский Энергетический Колледж",
+            profession: "Информационные системы",
+
+            dateTime: "2024",
           },
         ],
+
 
         development: [
           {
