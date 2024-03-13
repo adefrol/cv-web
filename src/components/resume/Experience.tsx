@@ -3,7 +3,7 @@ import { FC } from "react";
 
 export const Experience: FC<{ user: IUser }> = ({ user }) => {
   return (
-    <div className="">
+    <div>
       {user?.resume.map((item) => (
         <div key={item.id} className="flex flex-col gap-[60px]">
           {item.experience.map((exp) => (
