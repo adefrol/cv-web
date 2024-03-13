@@ -68,56 +68,50 @@ export const users: IUser[] = [
           {
             id: 3,
             title: "Язык",
-            body: "JavaScript",
-          },
-
-          {
-            id: 4,
-            title: "Язык",
             body: "TypeScript",
           },
 
           // БИБИЛИОТЕКИ
           {
-            id: 5,
+            id: 4,
             title: "Библиотека",
             body: "React",
           },
 
           {
-            id: 6,
+            id: 5,
             title: "Библиотека",
             body: "React Native",
           },
 
           // ФРЕЙМВОРКИ
           {
-            id: 7,
+            id: 6,
             title: "Фреймворк",
             body: "Next.js",
           },
 
           // ЭКОСИСТЕМА
           {
-            id: 8,
+            id: 7,
             title: "Экосистема",
             body: "Redux",
           },
 
           {
-            id: 9,
+            id: 8,
             title: "Экосистема",
             body: "Zustand",
           },
 
           {
-            id: 10,
+            id: 9,
             title: "Экосистема",
             body: "Tanstack Query",
           },
 
           {
-            id: 11,
+            id: 10,
             title: "Экосистема",
             body: "Tanstack Router",
           },
