@@ -21,7 +21,7 @@ const Home = () => {
           приложений.
         </p>
 
-        <p className="max-w-[600px] font-light text-[16px]">
+        <p className="max-w-[600px] font-light text-[16px] text-justify">
           {/* {user?.resume.map((resume) => resume.body)} */}
           <b>Iillumed</b> - команда, специализирующаяся на создании
           инновационных веб-сайтов и мобильных приложений. Мы опытные
