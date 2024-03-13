@@ -38,7 +38,7 @@ export const Header: FC = () => {
 
   return (
     <div className="flex items-center justify-between max-[639px]:flex-col max-[639px]:gap-[30px]">
-      <div className="flex items-center gap-[30px]">
+      <div className="flex items-center gap-[30px] max-[639px]:gap-[50px]">
         {users.map((user) => (
           <div
             key={user.id}
@@ -48,8 +48,8 @@ export const Header: FC = () => {
                 user.id === currentUser?.id,
             })}
           >
-            <Avatar className="cursor-pointer">
-              <AvatarImage sizes="lg" src={user.img} />
+            <Avatar className="cursor-pointer w-[50px] h-[50px] max-[639px]:w-[60px] max-[639px]:h-[60px]">
+              <AvatarImage src={user.img} />
               <AvatarFallback>{user.name}</AvatarFallback>
             </Avatar>
 
