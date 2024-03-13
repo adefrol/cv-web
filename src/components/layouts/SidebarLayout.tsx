@@ -67,12 +67,12 @@ export const SidebarLayout: FC<IProps> = ({ children, focus, setFocus }) => {
           </div>
 
           <ScrollArea className="w-96 whitespace-nowrap max-[639px]:visible lg:hidden">
-            <div className="flex items-center w-max space-x-8">
+            <div className="flex items-center w-max space-x-8 max-[639px]:mb-4">
               {sidebar.map((item) => (
                 <li
                   key={item.id}
                   className={cn(
-                    "uppercase font-bold max-[639px]:text-[20px] text-black/20 cursor-pointer",
+                    "uppercase font-bold max-[639px]:text-[16px] text-black/20 cursor-pointer",
                     {
                       "text-black transition duration-300": focus === item.id,
                     }
