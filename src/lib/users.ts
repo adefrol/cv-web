@@ -47,7 +47,11 @@ export const users: IUser[] = [
         education: [
           {
             id: 1,
-            title: "Title Aleksandr",
+            educationType: "Среднее специальное",
+            educationPlace: "Иркутский Энергетический Колледж",
+            profession: "Информационные системы",
+
+            dateTime: "2024",
           },
         ],
 
