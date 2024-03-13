@@ -5,7 +5,7 @@ export const Development: FC<{ user: IUser }> = ({ user }) => {
   return (
     <div className="">
       {user.resume.map((item) => (
-        <div className="grid grid-cols-2 lg:gap-[60px]">
+        <div className="grid lg:grid-cols-4 lg:gap-[60px] grid-cols-2 gap-[40px]">
           <div className="space-y-[20px]">
             {item.development
               .filter((dev) => dev.title === "Язык")
@@ -21,6 +21,30 @@ export const Development: FC<{ user: IUser }> = ({ user }) => {
           <div className="space-y-[20px]">
             {item.development
               .filter((dev) => dev.title === "Библиотека")
+              .map((dev) => (
+                <div key={dev.id} className="flex flex-col">
+                  <p className="text-black/50 font-semibold">{dev.title}</p>
+
+                  <p className="font-bold">{dev.body}</p>
+                </div>
+              ))}
+          </div>
+
+          <div className="space-y-[20px]">
+            {item.development
+              .filter((dev) => dev.title === "Фреймворк")
+              .map((dev) => (
+                <div key={dev.id} className="flex flex-col">
+                  <p className="text-black/50 font-semibold">{dev.title}</p>
+
+                  <p className="font-bold">{dev.body}</p>
+                </div>
+              ))}
+          </div>
+
+          <div className="space-y-[20px]">
+            {item.development
+              .filter((dev) => dev.title === "Экосистема")
               .map((dev) => (
                 <div key={dev.id} className="flex flex-col">
                   <p className="text-black/50 font-semibold">{dev.title}</p>
