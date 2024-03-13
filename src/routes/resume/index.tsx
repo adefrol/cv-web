@@ -4,6 +4,7 @@ import { Development } from "@/components/resume/Development";
 import { Education } from "@/components/resume/Education";
 import { Experience } from "@/components/resume/Experience";
 import { Hobby } from "@/components/resume/Hobby";
+import { References } from "@/components/resume/References";
 import { useSwitchUser } from "@/context/SwitchUserContext";
 import { createFileRoute } from "@tanstack/react-router";
 import { useState } from "react";
@@ -12,11 +13,16 @@ export const Route = createFileRoute("/resume/")({
   component: () => <Resume />,
 });
 
+interface IContentProps {
+  id: number;
+  content: JSX.Element;
+}
+
 const Resume = () => {
   const { user } = useSwitchUser();
   const [focus, setFocus] = useState(1);
 
-  const content = [
+  const content: IContentProps[] = [
     {
       id: 1,
       content: <Experience user={user!} />,
@@ -35,6 +41,11 @@ const Resume = () => {
     {
       id: 4,
       content: <Hobby user={user!} />,
+    },
+
+    {
+      id: 5,
+      content: <References user={user!} />,
     },
   ];
 
