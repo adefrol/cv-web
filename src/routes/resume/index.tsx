@@ -1,4 +1,3 @@
-import { PageTitle } from "@/components/PageTitle";
 import { SidebarLayout } from "@/components/layouts/SidebarLayout";
 import { Development } from "@/components/resume/Development";
 import { Education } from "@/components/resume/Education";
